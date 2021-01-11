@@ -1,0 +1,20 @@
+class HousedetailController < ApplicationController
+
+    def houseDirection
+        @house = Housedetail.find_by_sql('select district,count(*) as cnum,avg(attention) as anum from housedetail group by district')
+        render :json => @house,status: '200 OK'
+    end
+    def houseDecoration
+        @house = Housedetail.find_by_sql('select decoration,count(*) as num,avg(unitPrice) as price from housedetail group by decoration')
+        render :json => @house,status: '200 OK'
+    end
+    def houseTagList
+        @house = Housedetail.find_by_sql('select tagList,avg(unitPrice) as total from housedetail group by tagList order by total desc')
+        render :json => @house,status: '200 OK'
+    end
+    def communityAttention
+        @house = Housedetail.find_by_sql('select community,sum(attention) as num from housedetail group by community order by num desc limit 10')
+    end
+    def new
+    end
+end

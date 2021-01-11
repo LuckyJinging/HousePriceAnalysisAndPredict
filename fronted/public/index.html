@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=T2G4D7YfmvemLCPQ8yFDFay2qOgkHEqE"></script>
+  <script type="text/javascript"
+          src="http://api.map.baidu.com/library/DistanceTool/1.2/src/DistanceTool_min.js"></script>
+  <script type="text/javascript"
+          src="http://api.map.baidu.com/library/RectangleZoom/1.2/src/RectangleZoom_min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://api.map.baidu.com/res/12/bmap.css"/>
+  <script
+    src="https://webapi.amap.com/maps?v=1.4.14&key=cecdff7e42cf9012d60437824f58f0ce&&plugin=AMap.Scale,AMap.OverView,AMap.ToolBar,AMap.MouseTool,AMap.DistrictSearch"></script>
+  <script type="text/javascript" src="/static/js/jquery-2.2.4.min%20.js"></script>
+  <title><%= webpackConfig.name %></title>
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>

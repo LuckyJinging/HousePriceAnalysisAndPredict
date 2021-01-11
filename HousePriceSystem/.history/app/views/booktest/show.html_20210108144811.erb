@@ -1,0 +1,7 @@
+<p>
+  <strong>Title:</strong>
+  <%= @book.count %>
+  <% @book.each do |msg|%>
+    <li><%= msg.book_name %></li>
+  <% end %>
+</p>

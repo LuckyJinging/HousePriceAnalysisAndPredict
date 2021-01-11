@@ -1,0 +1,2 @@
+class Booktest < ApplicationRecord
+end
